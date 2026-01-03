@@ -1,0 +1,42 @@
+[0.525s] Invoking command in '/home/dong/drone_kkk_ws/src/decision_node': CMAKE_PREFIX_PATH=/home/dong/drone_kkk_ws/install/drone_msgs:/home/dong/drone_kkk_ws/install/px4 LD_LIBRARY_PATH=/home/dong/drone_kkk_ws/install/drone_msgs/lib:/home/dong/drone_kkk_ws/install/px4/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/dong/drone_kkk_ws/build/decision_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/decision_node build --build-base /home/dong/drone_kkk_ws/build/decision_node/build install --record /home/dong/drone_kkk_ws/build/decision_node/install.log --single-version-externally-managed install_data
+[0.636s] running egg_info
+[0.636s] creating ../../build/decision_node/decision_node.egg-info
+[0.636s] writing ../../build/decision_node/decision_node.egg-info/PKG-INFO
+[0.636s] writing dependency_links to ../../build/decision_node/decision_node.egg-info/dependency_links.txt
+[0.636s] writing entry points to ../../build/decision_node/decision_node.egg-info/entry_points.txt
+[0.636s] writing requirements to ../../build/decision_node/decision_node.egg-info/requires.txt
+[0.636s] writing top-level names to ../../build/decision_node/decision_node.egg-info/top_level.txt
+[0.637s] writing manifest file '../../build/decision_node/decision_node.egg-info/SOURCES.txt'
+[0.637s] reading manifest file '../../build/decision_node/decision_node.egg-info/SOURCES.txt'
+[0.638s] writing manifest file '../../build/decision_node/decision_node.egg-info/SOURCES.txt'
+[0.638s] running build
+[0.638s] running build_py
+[0.638s] creating /home/dong/drone_kkk_ws/build/decision_node/build
+[0.638s] creating /home/dong/drone_kkk_ws/build/decision_node/build/lib
+[0.638s] creating /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node
+[0.638s] copying decision_node/__init__.py -> /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node
+[0.638s] creating /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node/mission_waypoint
+[0.638s] copying decision_node/mission_waypoint/__init__.py -> /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node/mission_waypoint
+[0.638s] copying decision_node/mission_waypoint/waypoint_fsm.py -> /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node/mission_waypoint
+[0.638s] running install
+[0.638s] running install_lib
+[0.639s] creating /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node
+[0.639s] creating /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node/mission_waypoint
+[0.639s] copying /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node/mission_waypoint/__init__.py -> /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node/mission_waypoint
+[0.639s] copying /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node/mission_waypoint/waypoint_fsm.py -> /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node/mission_waypoint
+[0.639s] copying /home/dong/drone_kkk_ws/build/decision_node/build/lib/decision_node/__init__.py -> /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node
+[0.639s] byte-compiling /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node/mission_waypoint/__init__.py to __init__.cpython-310.pyc
+[0.639s] byte-compiling /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node/mission_waypoint/waypoint_fsm.py to waypoint_fsm.cpython-310.pyc
+[0.639s] byte-compiling /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node/__init__.py to __init__.cpython-310.pyc
+[0.639s] running install_data
+[0.639s] creating /home/dong/drone_kkk_ws/install/decision_node/share/ament_index
+[0.639s] creating /home/dong/drone_kkk_ws/install/decision_node/share/ament_index/resource_index
+[0.639s] creating /home/dong/drone_kkk_ws/install/decision_node/share/ament_index/resource_index/packages
+[0.639s] copying resource/decision_node -> /home/dong/drone_kkk_ws/install/decision_node/share/ament_index/resource_index/packages
+[0.639s] copying package.xml -> /home/dong/drone_kkk_ws/install/decision_node/share/decision_node
+[0.640s] running install_egg_info
+[0.640s] Copying ../../build/decision_node/decision_node.egg-info to /home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages/decision_node-0.0.1-py3.10.egg-info
+[0.641s] running install_scripts
+[0.652s] Installing waypoint_fsm script to /home/dong/drone_kkk_ws/install/decision_node/lib/decision_node
+[0.652s] writing list of installed files to '/home/dong/drone_kkk_ws/build/decision_node/install.log'
+[0.670s] Invoked command in '/home/dong/drone_kkk_ws/src/decision_node' returned '0': CMAKE_PREFIX_PATH=/home/dong/drone_kkk_ws/install/drone_msgs:/home/dong/drone_kkk_ws/install/px4 LD_LIBRARY_PATH=/home/dong/drone_kkk_ws/install/drone_msgs/lib:/home/dong/drone_kkk_ws/install/px4/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/dong/drone_kkk_ws/build/decision_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dong/drone_kkk_ws/install/decision_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/decision_node build --build-base /home/dong/drone_kkk_ws/build/decision_node/build install --record /home/dong/drone_kkk_ws/build/decision_node/install.log --single-version-externally-managed install_data

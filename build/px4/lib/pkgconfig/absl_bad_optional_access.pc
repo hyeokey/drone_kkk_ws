@@ -1,0 +1,12 @@
+prefix=/home/dong/drone_kkk_ws/install/px4
+exec_prefix=${prefix}
+libdir=/home/dong/drone_kkk_ws/install/px4/lib
+includedir=/home/dong/drone_kkk_ws/install/px4/include
+
+Name: absl_bad_optional_access
+Description: Abseil bad_optional_access library
+URL: https://abseil.io/
+Version: head
+Requires:
+Libs: -L${libdir}  
+Cflags: -I${includedir}

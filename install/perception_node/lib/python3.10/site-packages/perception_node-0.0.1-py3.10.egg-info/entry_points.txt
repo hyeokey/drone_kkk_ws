@@ -1,0 +1,3 @@
+[console_scripts]
+waypoint_detector = perception_node.camera.mission_waypoint.waypoint_detector:main
+
