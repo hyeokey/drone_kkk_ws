@@ -1,3 +1,0 @@
-[console_scripts]
-waypoint_fsm = decision_node.mission_waypoint.waypoint_fsm:main
-

@@ -1,7 +1,0 @@
-{
-  "package_name": "drone_msgs",
-  "non_idl_tuples": [
-    "/home/dong/drone_kkk_ws/src/drone_msgs:msg/Waypoint.msg",
-    "/home/dong/drone_kkk_ws/src/drone_msgs:msg/MarkerCenter.msg"
-  ]
-}

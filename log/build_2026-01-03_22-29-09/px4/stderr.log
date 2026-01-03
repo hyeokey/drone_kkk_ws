@@ -1,2 +1,0 @@
-[0mArchitecture:  amd64[0m
-[0m==> CPACK_INSTALL_PREFIX = @DEB_INSTALL_PREFIX@[0m
