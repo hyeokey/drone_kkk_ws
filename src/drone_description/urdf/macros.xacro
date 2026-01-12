@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Box inertia -->
+  <xacro:macro name="inertial_box" params="mass x y z *origin">
+    <inertial>
+      <xacro:insert_block name="origin"/>
+      <mass value="${mass}"/>
+      <inertia
+        ixx="${mass*(y*y+z*z)/12}"
+        iyy="${mass*(x*x+z*z)/12}"
+        izz="${mass*(x*x+y*y)/12}"
+        ixy="0"
+        ixz="0"
+        iyz="0"/>
+    </inertial>
+  </xacro:macro>
+
+</robot>

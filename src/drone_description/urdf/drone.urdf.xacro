@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="drone">
+
+  <link name="base_link"/>
+
+  <joint name="base_to_body" type="fixed">
+    <parent link="base_link"/>
+    <child link="body_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="body_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.3 0.05"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_to_imu" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  <link name="imu_link"/>
+
+  <joint name="base_to_lidar" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0.12 0.0 0.26" rpy="0 0 0"/>
+  </joint>
+  <link name="lidar_link"/>
+
+  <material name="blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+
+  <joint name="motor_0_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="motor_0_link"/>
+    <origin xyz="0.174 -0.174 0.03" rpy="0 0 0"/>
+  </joint>
+  <link name="motor_0_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.02"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="motor_1_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="motor_1_link"/>
+    <origin xyz="-0.174 0.174 0.03" rpy="0 0 0"/>
+  </joint>
+  <link name="motor_1_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.02"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="motor_2_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="motor_2_link"/>
+    <origin xyz="0.174 0.174 0.03" rpy="0 0 0"/>
+  </joint>
+  <link name="motor_2_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.02"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="motor_3_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="motor_3_link"/>
+    <origin xyz="-0.174 -0.174 0.03" rpy="0 0 0"/>
+  </joint>
+  <link name="motor_3_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.04" radius="0.02"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+<gazebo reference="lidar_link">
+    <sensor name="lidar_2d_v2" type="gpu_lidar">
+      <gz_frame_id>lidar_link</gz_frame_id>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.141592</min_angle>
+            <max_angle>3.141592</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.1</min>
+          <max>30.0</max>
+        </range>
+      </lidar>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+    </sensor>
+  </gazebo>
+</robot>
