@@ -1,8 +1,9 @@
 # clone 해주기(필수)
 git clone --recurse-submodules -b hyeokey https://github.com/hyeokey/drone_kkk_ws.git
 
+## 📁 워크스페이스 구조
 
-# 워크 스페이스 구조
+```text
 drone_kkk_ws/
  ├── src/
  │   ├── drone_description/     # URDF + robot_state_publisher
@@ -12,7 +13,6 @@ drone_kkk_ws/
  ├── build/
  ├── install/
  └── log/
-
 
 # 빌드(필수)
 cd ~/drone_kkk_ws
@@ -36,8 +36,10 @@ nano ~/.bashrc # 창 열리면 아래 명령어 복붙하기
 
 # ROS 2 & Workspace Shortcut
 alias ss='source /opt/ros/humble/setup.bash && source ~/drone_kkk_ws/install/setup.bash && echo "ROS 2 Humble & Drone WS Loaded!"'
+
 # ctrl + o -> enter -> ctrl + x
 # 그 후 source ~/.bashrc 입력해주기
+
 
 
 
